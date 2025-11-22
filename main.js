@@ -15,11 +15,11 @@ const automobili = [
 
 
 let benzina = automobili.filter(element => {
-    return element.alimentazione == "Benzina" ;
+    return element.alimentazione === "Benzina" ;
 });
 
 let diesel = automobili.filter (element => {
-    return element.alimentazione == "Diesel" ;
+    return element.alimentazione === "Diesel" ;
 })
 
 let altro = automobili.filter (element => {
@@ -51,10 +51,15 @@ console.log(mammiferi);
 
 const supereroi = ["spiderman" , "ironman" , "HULK" , "captain America"] ;
 
-supereroi.forEach(element => {
-    return element.charAt(0)
+const nuovoArray = supereroi.map(element => {
+    let iniziale = nome.charAt(0).toUpperCase() ;
+    let tuttoIlResto = nome.substring(1).toLowerCase() 
+    const nuovaParola= iniziale+tuttoIlResto;
+    return nuovaParola ;
 }) ;
 
-console.log(supereroi);
+
+
+console.log(nuovoArray);
 
 
