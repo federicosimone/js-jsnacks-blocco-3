@@ -30,24 +30,31 @@ console.log(benzina);
 console.log(diesel);
 console.log(altro);
 
+/**************************************************************/
+
+let animali = [
+    {nome: "gatto" , famiglia: "felin" , classe: "mammifero"} ,
+    {nome: "cane" , famiglia: "canidi" , classe: "mammifero"} ,
+    {nome: "Tartaruga" , famiglia: "Cheloni" , classe: "Rettili"} ,
+    {nome: "Gallina" , famiglia: "fasianidi" , classe: "uccelli"} ,
+] ;
 
 
 
+let mammiferi = animali.filter (element => {
+    return element.classe == "mammifero" ;
+})
 
-//let diesel = [];
-//let altro = [];
+console.log(mammiferi);
 
+/******************************************************************/
 
-/*let benzina = automobili.filter(element => {
-    if (element.alimentazione == "Benzina") {
-        
-    } else if (element.alimentazione == "Diesel"){
-        diesel.push(element);
-    } else {
-        altro.push(element) ;
-    }
+const supereroi = ["spiderman" , "ironman" , "HULK" , "captain America"] ;
+
+supereroi.forEach(element => {
+    return element.charAt(0)
 }) ;
 
-console.log(diesel);
-console.log(altro) ;
-console.log(benzina);*/
+console.log(supereroi);
+
+
