@@ -52,8 +52,8 @@ console.log(mammiferi);
 const supereroi = ["spiderman" , "ironman" , "HULK" , "captain America"] ;
 
 const nuovoArray = supereroi.map(element => {
-    let iniziale = nome.charAt(0).toUpperCase() ;
-    let tuttoIlResto = nome.substring(1).toLowerCase() 
+    let iniziale = element.charAt(0).toUpperCase() ;
+    let tuttoIlResto = element.substring(1).toLowerCase() 
     const nuovaParola= iniziale+tuttoIlResto;
     return nuovaParola ;
 }) ;
