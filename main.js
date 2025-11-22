@@ -62,4 +62,4 @@ const nuovoArray = supereroi.map(element => {
 
 console.log(nuovoArray);
 
-
+/***********************************************************************/
