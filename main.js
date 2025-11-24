@@ -74,7 +74,7 @@ const personePatente = persone.map(persona =>{
     if (persona.età >= 18) {
         return console.log(`${persona.nome} ${persona.cognome} può guidare`)
     } else {
-        return console.log(`${persona.nome} ${persona.cognome} non può guidare perchè ha meno di 18 anni `)
+        return console.log(`${persona.nome} ${persona.cognome} non può guidare perchè ha meno di 18 anniS `)
     }
     
 })
