@@ -63,3 +63,18 @@ const nuovoArray = supereroi.map(element => {
 console.log(nuovoArray);
 
 /***********************************************************************/
+const persone = [
+    {nome: "Federico", cognome: "Simone", età: 27 },
+    {nome: "Alessia", cognome: "Carrera", età: 24 },
+    {nome: "Andrea", cognome: "Lege", età: 16 },
+    {nome: "Aldo", cognome: "Baglio", età: 68 },
+] ;
+
+const personePatente = persone.map(persona =>{
+    if (persona.età >= 18) {
+        return console.log(`${persona.nome} ${persona.cognome} può guidare`)
+    } else {
+        return console.log(`${persona.nome} ${persona.cognome} non può guidare perchè ha meno di 18 anni `)
+    }
+    
+})
